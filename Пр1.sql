@@ -36,6 +36,6 @@ REFERENCES Supplier,
 FOREIGN KEY (Id_Products)
 REFERENCES Products,
 FOREIGN KEY (Id_Organization)
-REFERENCES Organization,
+REFERENCES Organization
 )
 
