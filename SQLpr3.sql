@@ -29,10 +29,10 @@ SELECT T.Tnum Number ,T.Tname Name,((T.Price/100)*85) AS DiscountPrice
 FROM STD ,T 
 WHERE(STD.Tnum = T.Tnum) AND (T.EdIzm = 'пачка, 10 кг') AND (T.City = 'Москва')
 			
-								
+	
 
 
 
 --5
-
-
+DELETE FROM S_TABLE 
+WHERE S_TABLE.Status<20
