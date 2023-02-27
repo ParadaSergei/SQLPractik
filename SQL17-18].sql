@@ -13,15 +13,16 @@
 ----GO
 --CREATE PROC [InsertNewLesson]
 --@name nvarchar(50) ,
+--@lecturerId int,
 --@description nvarchar(100)
 --AS 
 --BEGIN
---INSERT INTO [LessonObject] ([Name] , [Description])
---VALUES (@name ,@description);
+--INSERT INTO [LessonObject] ([LecturerId] ,[Name] , [Description])
+--VALUES (@lecturerId ,@name ,@description);
 --END;
 --GO
 --EXEC [InsertNewLecturer] @name = 'Александр' ,@middlename='Козбеков' , @lastName='Петрович' , @description ='Учитель математики'
---EXEC [InsertNewLesson] @name = 'Александр', @description ='Учитель математики'
+--EXEC [InsertNewLesson] @lecturerId = 1, @name = 'Александр', @description ='Учитель математики'
 
 
 
@@ -71,6 +72,7 @@
 --END;
 --GO
 
-EXEC [DeleteLesson] @lesson = '1'
+--EXEC [DeleteLesson] @lesson = '8'
+--EXEC [DeleteLecturer] @lecturer = '1'
 
 --4
