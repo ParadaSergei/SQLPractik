@@ -1,0 +1,7 @@
+new
+process
+assembly
+ready
+delivering
+issued
+rejected
